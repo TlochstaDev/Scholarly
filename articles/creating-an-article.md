@@ -11,7 +11,7 @@ The item should consist of the following data (customise for your needs)
 {
   "title": "Your Articles Title Put Here",
   "image": "https://example.com/your-image-url",
-  "id": "put-your-file-name-WITHOUT-THE-MD! (ex: how-to-use-html)"
+  "id": "put-your-file-name-WITHOUT-THE-MD! (ex: how-to-use-html)",
   "author": "your name/org"
 }
 ```
