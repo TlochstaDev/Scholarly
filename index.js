@@ -8,6 +8,7 @@ const port = 3000;
 
 const articles = require("./data/articles.json")
 
+app.set('views', __dirname + '/views');
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
