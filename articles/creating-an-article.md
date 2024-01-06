@@ -1,4 +1,3 @@
-# Creating an Article
 When creating an article on tlochsta edu you need to first, create or login with a GitHub account. 
 Then, head over to [this repository](https://github.com/TlochstaDev/Scholarly) and make and fork it.
 After you do that, make a new Markdown file in the **/articles directory**.
