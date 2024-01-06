@@ -31,7 +31,8 @@ app.get('/articles/:id', async (req, res) => {
     const htmlContent = marked(mdContent);
     res.render('article', { title, author, content: htmlContent });
   } catch (error) {
-    res.render("404")
+    console.log(error)
+    res.send(error);
   }
 });
 
