@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path')
 const fs = require('fs/promises');
 const marked = require('marked');
 const ejs = require('ejs');
@@ -9,7 +10,7 @@ const port = 3000;
 const articles = require("./data/articles.json")
 
 app.set('views', __dirname + '/views');
-app.use(express.static('static'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
