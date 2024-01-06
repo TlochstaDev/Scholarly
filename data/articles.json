@@ -4,5 +4,11 @@
     "image": "/img/5ee24e86-a2a4-4560-a48f-58ec409b6f3b.png",
     "id": "creating-an-article",
     "author": "tlochsta"
+  },
+  {
+    "title": "How to use Firebase with Node.js",
+    "image": "/img/firebase.png",
+    "id": "how-to-use-firebase",
+    "author": "tlochsta"
   }
 ]
