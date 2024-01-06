@@ -1,5 +1,3 @@
-# Learning GNU/Linux - Debian: Part 1
-------
 
 #### Fun Fact
 
