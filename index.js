@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path')
-const fs = require('fs/promises');
+const fs = require('fs');
 const marked = require('marked');
 const ejs = require('ejs');
 
