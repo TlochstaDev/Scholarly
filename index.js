@@ -26,13 +26,12 @@ app.get('/search', (req, res) => {
 app.get('/articles/:id', async (req, res) => {
   const articleId = req.params.id;
   try {
-    const mdContent = await fs.readFile(`/articles/${articleId}.md`, 'utf-8');
+    const mdContent = await fs.promises.readFile(`articles/${articleId}.md`, 'utf-8');
     const { title, author } = articles.find(article => article.id === articleId);
     const htmlContent = marked(mdContent);
     res.render('article', { title, author, content: htmlContent });
   } catch (error) {
-    console.log(error)
-    res.send(error);
+    res.status(404).send('Article not found');
   }
 });
 
