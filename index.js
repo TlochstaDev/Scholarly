@@ -10,7 +10,7 @@ const port = 3000;
 const articles = require("./data/articles.json")
 
 app.set('views', __dirname + '/views');
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'static')));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
